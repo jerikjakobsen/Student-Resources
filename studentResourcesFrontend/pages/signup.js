@@ -22,7 +22,6 @@ const signupSchema = yup.object().shape({
 class signup extends React.Component {
 
     submit = (data, {setSubmitting}) => {
-        console.log("submit!")
         setSubmitting(true);
         axios.post("/createUser", {
             username: data.username,
